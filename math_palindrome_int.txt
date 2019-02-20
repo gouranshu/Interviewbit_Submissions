@@ -1,0 +1,17 @@
+https://www.interviewbit.com/problems/palindrome-integer/
+
+int Solution::isPalindrome(int A) {
+    string x, rev;
+    x = to_string(A);
+    rev = x;
+    reverse(rev.begin(), rev.end());
+    int res = x.compare(rev);
+    if( res == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
