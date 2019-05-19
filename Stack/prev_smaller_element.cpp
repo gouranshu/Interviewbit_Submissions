@@ -1,6 +1,9 @@
+https://www.interviewbit.com/problems/nearest-smaller-element/
+
 APPROACH: Now look at A[i-1]. All elements with index smaller than i - 1 and greater than A[i-1] 
 are useless to us because they would never qualify for G[i], G[i+1], ...
 Using the above fact, we know that we only need previous numbers in descending order.
+   
 The pseudocode would look something like :
 1) Create a new empty stack st
 2) Iterate over array `A`,
